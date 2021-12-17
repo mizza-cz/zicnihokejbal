@@ -1,0 +1,74 @@
+.clanky {
+  h2 {
+    font-size: 4.525rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.68;
+    letter-spacing: -3.5px;
+    position: relative;
+    margin-bottom: 43px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/clanky.svg');
+      width: 112px;
+      height: 118px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: 41px;
+      bottom: -23px;
+    }
+    span {
+      display: block;
+      font-family: 'Caveat', cursive;
+      font-weight: 700;
+      font-size: 5.3063rem;
+      color: $red;
+      margin-top: -8px;
+    }
+  }
+}
+.aside .clanek {
+  padding-right: 21px;
+  margin-bottom: 42px;
+}
+.clanek {
+  width: 100%;
+  margin-bottom: 24px;
+  a {
+    &:hover {
+      h3 {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__img {
+    height: 256px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 28px;
+    img {
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    background-color: #d8d8d8;
+    .date {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.date {
+  color: #fff;
+  background-color: $red;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  padding: 4px 9px 5px 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: -0.33px;
+}

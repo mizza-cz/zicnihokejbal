@@ -1,0 +1,120 @@
+.search {
+  p {
+    font-size: 1.5rem;
+    line-height: 1.42;
+    a {
+      font-weight: 700;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  h2 {
+    font-size: 4.525rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.68;
+    letter-spacing: -3.2px;
+    margin-bottom: 35px;
+    span {
+      display: block;
+      color: $blue;
+      font-weight: 700;
+      font-family: 'Caveat', cursive;
+      margin-top: -4px;
+      font-size: 5.3063rem;
+    }
+  }
+}
+.search-form {
+  margin-top: 42px;
+  margin-bottom: 21px;
+  &__label {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.78;
+    letter-spacing: -0.5px;
+    margin-bottom: 7px;
+    display: block;
+  }
+  &__row {
+    display: flex;
+  }
+  &__btn {
+    border-radius: 0px 6px 6px 0px !important;
+  }
+  &__input {
+    padding: 12px 16px 13px 51px;
+    border-radius: 6px 0px 0px 6px;
+    border: solid 1px #e4e6ea;
+    height: 56px;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    max-width: 313px;
+    input {
+      border: none;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      font-size: 0.875rem;
+      color: #292524;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+
+      &::placeholder {
+        font-size: 0.875rem;
+
+        color: #292524;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      background-image: url('../images/svg/search.svg');
+      width: 18px;
+      height: 18px;
+      top: 17px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.btn {
+  height: 56px;
+  width: 134px;
+  display: block;
+  border-radius: 6px;
+  border: none;
+  background-color: $blue;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+
+  .icon {
+    letter-spacing: -0.5px;
+    padding-left: 30px;
+    padding-right: 24px;
+
+    font-weight: 700;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
