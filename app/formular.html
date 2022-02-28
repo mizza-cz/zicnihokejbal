@@ -146,55 +146,58 @@
         </div>
       </div>
       <div class="main__content">
-         <div class="main-hp">
-            <div class="search">
-               <h2>
-                  Začni hrát
-                  <span>hokejbal!</span>
-               </h2>
-               <p>
-                  Zahrát si hokej na playstationu nebo na něj kouknout v televizi je určitě fajn.
-                  Ale co si radši 
-                  <a href="#">zkusit přímo na hřišti?</a>
-               </p>
-               <form class="search-form">
-                  <label for="input" class="search-form__label">
-                     Hledejte kluby v okolí
-                  </label>
-                  <div class="search-form__row">
-                     <div class="search-form__input">
-                        <input id="input" placeholder="Zadej město" type="text">
-                     </div>
-                     
-                     <button class="search-form__btn btn" type="submit">Najít klub</button>
-                  </div>
-               </form>
-               <div class="links">
-                  <a class="icon" href="#">
-                     <i class="icon--zacni"></i>
-                     Proč hrát hokejbal?
-                  </a>
-                  <a class="icon" href="#">
-                     <i class="icon-pin"></i>
-                     Najít klub podle polohy
-                  </a>
-               </div>
-            </div>
-            <div class="typo__video">
-               <h2>
-                  Poslední video
-                  <span>na YouTube</span>
-               </h2>
-              <div class="typo__video-row">
-               <div class="typo__video-box">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/H1WCtutVtck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-               <a class="typo__video-ban" href="#">
-                  <img src="images/content/bb.jpg" alt="">
-               </a>
-              </div>
-            </div>
+         <div class="typo">
+                        
+
+            <h2>Dotazy</h2>
+         
+            
+         
          </div>
+         
+         
+         <form action="" method="post" id="frm-contactForm">
+         
+         <table>
+         <tr class="required">
+            <th><label for="frm-contactForm-name" class="required">Jméno</label></th>
+         
+            <td><input type="text" name="name" id="frm-contactForm-name" required data-nette-rules='[{"op":":filled","msg":"Zadejte jméno"}]' class="text"></td>
+         </tr>
+         
+         <tr class="required">
+            <th><label for="frm-contactForm-surname" class="required">Příjmení</label></th>
+         
+            <td><input type="text" name="surname" id="frm-contactForm-surname" required data-nette-rules='[{"op":":filled","msg":"Zadejte příjmení"}]' class="text"></td>
+         </tr>
+         
+         <tr class="required">
+            <th><label for="frm-contactForm-email" class="required">E-mail</label></th>
+         
+            <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"},{"op":":email","msg":"Please enter a valid email address."}]' class="text"></td>
+         </tr>
+         
+         <tr class="required">
+            <th><label for="frm-contactForm-subject" class="required">Předmět emailu</label></th>
+         
+            <td><input type="text" name="subject" id="frm-contactForm-subject" required data-nette-rules='[{"op":":filled","msg":"Zadejte předmět emailu"}]' class="text"></td>
+         </tr>
+         
+         <tr class="required">
+            <th><label for="frm-contactForm-text" class="required">Text emailu</label></th>
+         
+            <td><textarea name="text" id="frm-contactForm-text" required data-nette-rules='[{"op":":filled","msg":"Zadejte text emailu"}]'></textarea></td>
+         </tr>
+         
+         <tr>
+            <th></th>
+         
+            <td><input type="submit" name="send" value="Odeslat oznámení" class="button"></td>
+         </tr>
+         </table>
+         
+         <input type="hidden" name="_form_" value="contactForm">
+         </form>
        
       </div>
       <aside class="aside">

@@ -1,5 +1,5 @@
 .navigation {
-  width: 280px;
+  width: 425px;
   background-color: #fff;
   padding: 45px 20px;
   box-shadow: 0 10px 44px 0 rgba(41, 37, 36, 0.15);
@@ -24,7 +24,7 @@
 }
 
 .navbar {
-  padding: 20px;
+  padding: 20px 0;
   margin-bottom: 155px;
   &__dropdown {
     height: 100%;
@@ -33,6 +33,20 @@
     box-shadow: none;
     display: none;
     li {
+      padding-left: 40px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 5px;
+        background-image: url('../images/content/hockey-ball.png');
+      }
+
       a {
         color: #000;
       }
@@ -67,7 +81,6 @@
       .navbar__dropdown {
         height: 100%;
         display: block;
-        padding-left: 40px;
         li {
           width: 100%;
           text-align: left;
