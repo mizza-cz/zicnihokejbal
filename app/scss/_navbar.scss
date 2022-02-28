@@ -23,6 +23,19 @@
   }
 }
 
+.icon-books:before {
+  content: '';
+  top: -10px;
+  position: absolute;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/svg/books.svg');
+}
+
 .navbar {
   padding: 20px 0;
   margin-bottom: 155px;

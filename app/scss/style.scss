@@ -30,8 +30,8 @@
     }
   }
   &__content {
-    max-width: 56.25%;
-    flex: 0 0 56.25%;
+    max-width: 53%;
+    flex: 0 0 53%;
     padding: 0 72px 0 65px;
     box-shadow: 0 10px 44px 0 rgba(41, 37, 36, 0.15);
     border: solid 1px #e4e6ea;
@@ -42,7 +42,7 @@
 .aside {
   background-color: #f6f7f8;
   width: 556px;
-  padding: 82px 16px 16px 68px;
+  padding: 82px 24px 16px 24px;
   .search {
     margin-bottom: 160px !important;
   }

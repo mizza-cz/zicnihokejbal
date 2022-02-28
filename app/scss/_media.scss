@@ -22,9 +22,7 @@
     padding: 0;
     margin-bottom: 90px;
   }
-  .navigation {
-    width: 260px;
-  }
+
   .typo__video-ban,
   .typo__video-box iframe {
     height: 250px;
@@ -82,6 +80,9 @@
 }
 
 @media (max-width: 1420px) {
+  .navigation {
+    width: 300px;
+  }
   .main-hp::before {
     width: 233px;
     height: 286px;
