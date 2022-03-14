@@ -219,6 +219,9 @@
 }
 
 @media (max-width: 640px) {
+  .search-form__input {
+    width: auto;
+  }
   .main-hp::before {
     z-index: 1;
   }

@@ -1,5 +1,12 @@
 .typo {
   padding: 77px 0 64px;
+  table {
+    width: 100% !important;
+    margin-bottom: 32px;
+    td:first-child {
+      font-weight: 700;
+    }
+  }
   &__video {
     margin-top: 99px;
 
@@ -218,5 +225,41 @@
     padding: 4px 22px;
     cursor: pointer;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 770px) {
+  .typo {
+    table {
+      tbody {
+        display: flex;
+        flex-wrap: wrap;
+        tr {
+          display: block;
+          padding: 8px 12px;
+          max-width: 33.333%;
+          flex: 0 0 33.333%;
+          border: 0.5px solid #d6dfe8;
+          td {
+            text-align: center;
+            display: block;
+            border-bottom: none;
+            padding: 4px 0 4px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .typo table tbody tr {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 400px) {
+  .typo table tbody tr {
+    max-width: 100%;
+    flex: 100%;
   }
 }
