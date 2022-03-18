@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+   <title>Document</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/libs.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <div class="main">
+      <div class="navigation">
+         <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="">
+         </a>
+         <div class="navbar__btns">
+            <div class="navbar__btn"></div>
+          </div>
+        <div class="mobile-wrapper">
+         <div class="navbar">
+            <ul class="navbar__menu">
+               <li class="navbar__list">
+                  <div class="navbar__item ">
+                   <div class="navbar__link icon" href="#">
+                     <i class="icon--zacni"></i>
+                     Začni s hokejbalem
+                   </div>
+                   <ul class="navbar__dropdown">
+                     <li>
+                        <a href="#">Co je to hokejbal
+                           Historie</a>
+                     </li>
+                     <li>
+                        <a href="#">Hokejbalové vybavení</a>
+                     </li>
+                     <li>
+                        <a href="#">Kde se hokejbal hraje?</a>
+                     </li>
+                  </ul>
+                  </div>
+               </li>
+               <li class="navbar__list">
+                 <div class="navbar__item">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-pro-rodice"></i>
+                     Pro rodiče
+                  </a>
+                 </div>
+               </li>
+               <li class="navbar__list">
+                 <div class="navbar__item">
+                  <div class="navbar__link icon " href="#">
+                     <i class="icon-pro-trenery"></i>
+                     Pro trenéry a učitele
+                  </div>
+                  <ul class="navbar__dropdown">
+                     <li>
+                        <a href="#">Objednávka vybavení</a>
+                     </li>
+                     <li>
+                        <a href="#">Zapojené školní organizace</a>
+                     </li>
+                     <li>
+                        <a href="#">dadsadsa</a>
+                     </li>
+                     <li>
+                        <a href="#">Metodické materiály</a>
+                     </li>
+                     <li>
+                        <a href="#">Popadni hokejku a pojď hrát hokejbal</a>
+                     </li>
+                  </ul>
+                 </div>
+                  
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-podpora"></i>
+                     Podpora a rozvoj
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-najdi"></i>
+                     Najdi klub
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-ke-stazeni"></i>
+                     Ke stažení
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-partneri"></i>
+                     Partneři
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-kontakt"></i>
+                     Kontakt
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="navigation__bottom">
+            <div class="nav-slide">
+               <a class="navigation__bottom-logo" href="#">
+                  <img src="images/svg/logo-svaz.svg" alt="">
+               </a>
+               <a class="navigation__bottom-logo" href="#">
+                  <img src="images/content/agentura.png" alt="">
+               </a>
+            </div>
+             
+
+               <ul class="social">
+                  <li>
+                     <a href="">
+                        <img src="images/svg/fb.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <img src="images/svg/insta.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <img src="images/svg/youtube.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.hokejbal.cz/">
+                        <img src="images/svg/dribbble-brands.svg" alt="">
+                     </a>
+                  </li>
+               </ul>
+         </div>
+        </div>
+      </div>
+      <div class="main__content">
+         <section class="search">
+
+            <div class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166843.1896016748!2d16.4378772084006!3d49.2019853964119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712943ac03f5111%3A0x400af0f6614b1b0!2sBrno!5e0!3m2!1scs!2scz!4v1647535190297!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="search__wrapper">
+               <h1>Najít školu / školku</h1>
+               <form class="search__form" action="" method="post" id="searchForm">
+                  <div class="search__form-top">
+                     <label for="sport" class="form-label">Vyberte sport</label>
+
+                     <select name="sportIds[]" id="sport" multiple class="select js-multiselect" aria-label="Vyberte sport" 0="multiple">
+                        <option value="kluby">Kluby</option>
+                        <option value="skoly">Školy</option>
+                        <option value="skolky">Školky</option>
+                        </select>
+                  </div>
+
+                
+
+                  <div class="col-xs-12 col-sm-4 filter-form-group form-group">
+                     <label for="address" class="form-label">Vyberte adresu</label>
+                     <input type="text" name="location" id="address" class="form-input" placeholder="město / obec, ulice, PSČ" aria-label="město / obec, ulice, PSČ">
+                  </div>
+
+                  <div class="filter-form-group form-group">
+                     <div class="checkbox checkbox-ext">
+                        <label data-toggle="tooltip" title="Zatržením položky zobrazíte ve výběru pouze kluby, kam je možné přihlásit děti a mládež."><input type="checkbox" name="youth" class="form-checkbox" id="frm-clubLister-filterForm-youth">Přijímá mládež</label>
+                        <label data-toggle="tooltip" title="Zatržením položky zobrazíte ve výběru pouze kluby, které se věnují handicapovaným sportovcům."><input type="checkbox" name="handicap" class="form-checkbox" id="frm-clubLister-filterForm-handicap">Pro handicapované</label>
+                        <label class="filter-checkbox-special" data-toggle="tooltip" title="Zatržením položky zobrazíte ve výběru také sportovní kroužky."><input type="checkbox" name="ring" class="form-checkbox" id="frm-clubLister-filterForm-ring">Sportovní kroužky</label>
+                     </div>
+                  </div> 
+
+                  <div class="col-xs-12 col-lg-1 filter-form-group text-nowrap">
+                     
+                     <button class="btn btn-icon btn-primary" aria-label="Hledej">najit</button>
+                  </div>
+
+               </form>
+
+            </div>
+            
+         
+            
+         
+         </section>
+         
+         
+       
+       
+      </div>
+      <aside class="aside">
+       
+         <div class="clanky">
+            <h2>Nejnovější
+               <span>články</span>   
+            </h2>
+            <div class="clanek">
+               <a href="#">
+                  <div class="clanek__img">
+                     <img src="images/content/top-1.jpg" alt="">
+                     <div class="date">
+                        7. 12. 2021
+                     </div>
+                  </div>
+                  <h3>
+                     Hvězda NHL David Pastrňák v dresu Karviné
+                  </h3>
+               </a>
+            </div>
+            <div class="clanek">
+               <a href="#">
+                  <div class="clanek__img">
+                     <img src="images/content/top-1.jpg" alt="">
+                     <div class="date">
+                        7. 12. 2021
+                     </div>
+                  </div>
+                  <h3>
+                     Hvězda NHL David Pastrňák v dresu Karviné
+                  </h3>
+               </a>
+            </div>
+            <div class="clanek">
+               <a href="#">
+                  <div class="clanek__img">
+                     <img src="images/content/top-1.jpg" alt="">
+                     <div class="date">
+                        7. 12. 2021
+                     </div>
+                  </div>
+                  <h3>
+                     Hvězda NHL David Pastrňák v dresu Karviné
+                  </h3>
+               </a>
+            </div>
+
+         </div>
+      </aside>
+   </div>
+
+
+   
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

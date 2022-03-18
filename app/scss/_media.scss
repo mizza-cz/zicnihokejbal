@@ -219,6 +219,9 @@
 }
 
 @media (max-width: 640px) {
+  h3 {
+    font-size: 1.3rem;
+  }
   .search-form__input {
     width: auto;
   }

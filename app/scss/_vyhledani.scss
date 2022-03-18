@@ -1,0 +1,46 @@
+.map {
+  margin-bottom: 32px;
+  iframe {
+    display: block;
+    width: 100%;
+  }
+}
+.search {
+  &__form {
+  }
+  &__wrapper {
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+select {
+  line-height: 1.1;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 4px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 7px 8px 3px 11px;
+  max-width: 260px;
+  width: 100%;
+  min-width: 300px;
+  box-sizing: border-box;
+  margin: 0 4px;
+  height: 40px;
+  outline: none;
+  background-image: url('../images/svg/angle-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 1.2rem center;
+  background-size: 8px 12px;
+  transition: 0.3s all linear;
+}
