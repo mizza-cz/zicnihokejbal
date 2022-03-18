@@ -1,4 +1,11 @@
 $(function () {
+  $('.gallery .group').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true,
+    },
+  })
    $('.navbar__link').on('click', function () {
       $(this).closest('.navbar__list').toggleClass('active');
     });

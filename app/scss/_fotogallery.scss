@@ -10,6 +10,11 @@
     flex: 0 0 50%;
     padding: 0 16px;
     margin-bottom: 32px;
+    &:hover {
+      h3 {
+        text-decoration: underline;
+      }
+    }
     @media (max-width: 540px) {
       flex: 100%;
       max-width: 100%;
