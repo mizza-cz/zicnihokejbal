@@ -32,8 +32,9 @@
     flex-wrap: wrap;
     li {
       a {
-        width: 100%;
-        height: 200px;
+        aspect-ratio: 1280/548;
+        @media (max-width: 540px) {
+        }
         img {
           object-fit: cover;
         }
