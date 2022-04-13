@@ -80,7 +80,7 @@ select{
    }
    &__img{
       width: 120px;
-      height: 100px;
+      height: auto;
       padding-right: 16px;
       min-width: 120px;
       img{
@@ -89,6 +89,11 @@ select{
    }
    &__info{
       padding: 0 16px;
+      span{
+         color: #ee3232;
+         font-weight: 700;
+         font-size: 20px;
+      }
    }
    &__btn{
       cursor: pointer;
@@ -118,7 +123,7 @@ select{
    }
    .product__img{
       width: 100%;
-      height: auto;
       padding-right: 0;
+      margin-bottom: 16px;
    }
 }
