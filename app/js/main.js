@@ -24,27 +24,129 @@ $(function () {
 })
 
 
-const counter = function () {
-  const btns = document.querySelectorAll('.counter__btn');
+let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
+if(!productsInCart){
+	productsInCart = [];
+}
+const parentElement = document.querySelector('#buyItems');
+const cartSumPrice = document.querySelector('#sum-prices');
+const products = document.querySelectorAll('.product');
 
 
-  btns.forEach(btn => {
-    btn.addEventListener('click', function () {
-      const direction = this.dataset.direction;
-      const inp = this.parentElement.querySelector('.counter__value');
-      const currentValue = +inp.value;
-      let newValue;
-
-      if (direction === 'plus') {
-        newValue = currentValue + 1;
-      } else {
-        newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
-      }
-
-      inp.value = newValue;
-    })
-  })
-
+const countTheSumPrice = function () { // 4
+	let sum = 0;
+	productsInCart.forEach(item => {
+		sum += item.price;
+	});
+	return sum;
 }
 
-counter();
+const updateShoppingCartHTML = function () {  // 3
+	localStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
+	if (productsInCart.length > 0) {
+		let result = productsInCart.map(product => {
+			return `
+				<div class="buyItem">
+						<h5>${product.name}</h5>
+            <div>
+						<h6>${product.price}Kč</h6>
+						<div class="product__count">
+							<button class="button-minus" data-id=${product.id}>-</button>
+							<span class="countOfProduct">${product.count}</span>
+							<button class="button-plus" data-id=${product.id}>+</button>
+						</div>
+					</div>
+				</div>`
+		});
+		parentElement.innerHTML = result.join('');
+		cartSumPrice.innerHTML =  countTheSumPrice() + 'Kč' 
+
+	}
+	else {
+		
+		parentElement.innerHTML = ' ';
+	}
+}
+
+function updateProductsInCart(product) { // 2
+	for (let i = 0; i < productsInCart.length; i++) {
+		if (productsInCart[i].id == product.id) {
+			productsInCart[i].count += 1;
+			productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+			return;
+		}
+	}
+	productsInCart.push(product);
+}
+
+products.forEach(item => {   // 1
+	item.addEventListener('click', (e) => {
+		if (e.target.classList.contains('addToCart')) {
+			const productID = e.target.dataset.productId;
+			const productName = item.querySelector('h3').innerHTML;
+			const productPrice = item.querySelector('span').innerHTML;
+			const productImage = item.querySelector('img').src;
+			let product = {
+				name: productName,
+				image: productImage,
+				id: productID,
+				count: 1,
+				price: +productPrice,
+				basePrice: +productPrice,
+			}
+			updateProductsInCart(product);
+			updateShoppingCartHTML();
+		}
+	});
+});
+
+parentElement.addEventListener('click', (e) => { // Last
+	const isPlusButton = e.target.classList.contains('button-plus');
+	const isMinusButton = e.target.classList.contains('button-minus');
+	if (isPlusButton || isMinusButton) {
+		for (let i = 0; i < productsInCart.length; i++) {
+			if (productsInCart[i].id == e.target.dataset.id) {
+				if (isPlusButton) {
+					productsInCart[i].count += 1
+				}
+				else if (isMinusButton) {
+					productsInCart[i].count -= 1
+				}
+				productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+
+			}
+			if (productsInCart[i].count <= 0) {
+				productsInCart.splice(i, 1);
+			}
+		}
+		updateShoppingCartHTML();
+	}
+});
+
+updateShoppingCartHTML();
+
+ 
+// const counter = function () {
+//   const btns = document.querySelectorAll('.counter__btn');
+
+
+//   btns.forEach(btn => {
+//     btn.addEventListener('click', function () {
+//       const direction = this.dataset.direction;
+//       const inp = this.parentElement.querySelector('.counter__value');
+//       const currentValue = +inp.value;
+//       let newValue;
+
+//       if (direction === 'plus') {
+//         newValue = currentValue + 1;
+//       } else {
+//         newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+//       }
+
+//       inp.value = newValue;
+//     })
+//   })
+
+// }
+
+// counter();

@@ -169,22 +169,24 @@
          
             <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"},{"op":":email","msg":"Please enter a valid email address."}]' class="text"></td>
          </tr>
-         <tr class="required">
+         <tr class="required"> 
             <th><label for="frm-contactForm-subject" class="required">Telefoní číslo</label></th>
             <td><input type="tel" name="subject" id="frm-contactForm-subject" required data-nette-rules='[{"op":":filled","msg":"Zadejte číslo"}]' class="text"></td>
          </tr>
          <tr class="">
             <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
-            <td>
-               <select id="frm-contactForm-subject">
+            <td id="buyItems">
+               <!-- <select id="frm-contactForm-subject">
                   <option value="1">Bunda Under Armour Unstoppable Windbreaker</option>
                   <option value="2">Mikina Under Armour Rival Fleece Crew</option>
                   <option value="3">Hokejové Brusle CCM SK Ribcor 88K Senior W</option>
-               </select>
+               </select> -->
+               <h6 id="sum-prices"></h6>
+              
             </td>
          </tr>
+        
          </table>
-         <input type="hidden" name="_form_" value="contactForm">
          </form>
          <div id="" class="shop-tabs">
             <div class="shop-tabs__header">
@@ -195,7 +197,7 @@
             </div>
             <div class="shop-tabs__products">
                <div class="products">
-                  <div class="mix jacket">
+                  <div class="mix jacket">   
                      <div class="product">
                         <a class="product__link" href="#">
                            <div class="product__img">
@@ -207,16 +209,7 @@
                               <span>600 Kč</span>
                            </div>
                         </a>
-                        <div class="product__input">
-                           <div class="counter__btn" data-direction="minus" disabled>
-                             -
-                           </div>
-                           <input class="counter__value" type="text" value="0">
-                           <div  class="counter__btn" data-direction="plus">
-                              +
-                           </div>
-                         </div>
-                       
+                         <button class="counter__btn addToCart" data-product-id="1">+</button>
                      </div>
                   </div>
                   <div class="mix hoody">
@@ -231,15 +224,7 @@
                               <span>350 Kč</span>
                            </div>
                         </a>
-                        <div class="product__input">
-                           <div class="counter__btn" data-direction="minus" disabled>
-                             -
-                           </div>
-                           <input class="counter__value" type="text" value="0">
-                           <div  class="counter__btn" data-direction="plus">
-                              +
-                           </div>
-                         </div>
+                        <button class="counter__btn addToCart" data-product-id="2">+</button>
                      </div>
                   </div>
                   <div class="mix skates">
@@ -254,15 +239,7 @@
                               <span>600 Kč</span>
                            </div>
                         </a>
-                        <div class="product__input">
-                           <div class="counter__btn" data-direction="minus" disabled>
-                             -
-                           </div>
-                           <input class="counter__value" type="text" value="0">
-                           <div  class="counter__btn" data-direction="plus">
-                              +
-                           </div>
-                         </div>
+                        <button class="counter__btn addToCart" data-product-id="3">+</button>
                      </div>
                   </div>
                   <div class="mix hoody">
@@ -277,15 +254,7 @@
                               <span>600 Kč</span>
                            </div>
                         </a>
-                        <div class="product__input">
-                           <div class="counter__btn" data-direction="minus" disabled>
-                             -
-                           </div>
-                           <input class="counter__value" type="text" value="0">
-                           <div  class="counter__btn" data-direction="plus">
-                              +
-                           </div>
-                         </div>
+                        <button class="counter__btn addToCart" data-product-id="4">+</button>
                      </div>
                   </div>
                   <div class="mix skates">
@@ -300,15 +269,7 @@
                               <span>600 Kč</span>
                            </div>
                         </a>
-                        <div class="product__input">
-                           <div class="counter__btn" data-direction="minus" disabled>
-                             -
-                           </div>
-                           <input class="counter__value" type="text" value="0">
-                           <div  class="counter__btn" data-direction="plus">
-                              +
-                           </div>
-                         </div>
+                        <button class="counter__btn addToCart" data-product-id="5">+</button>
                      </div>
                   </div>
                </div>

@@ -123,10 +123,35 @@ select{
       min-width: 50px;
       background: transparent;
       transition: all .3s;
+      outline: none;
+      border: 1px solid #2158d5;
       &:hover{
          background-color: #2158d5;
          color: #fff;
       }
+}
+.product__count{
+   padding: 0 16px;
+}
+.buyItem{
+   
+   border-radius: 6px 0px 0px 6px;
+    border: solid 1px #e4e6ea;
+    height: 56px;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    h5{
+       padding: 0 16px;
+    }
+    h6{
+       display: none;
+    }
 }
 
 @media(max-width:600px){
