@@ -90,7 +90,7 @@ products.forEach(item => {   // 1
 				name: productName,
 				image: productImage,
 				id: productID,
-				count: 1,
+				count: 1,  
 				price: +productPrice,
 				basePrice: +productPrice,
 			}

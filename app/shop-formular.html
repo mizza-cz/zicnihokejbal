@@ -165,27 +165,24 @@
             <td><input type="text" name="surname" id="frm-contactForm-surname" required data-nette-rules='[{"op":":filled","msg":"Zadejte příjmení"}]' class="text"></td>
          </tr>
          <tr class="required">
+            <th><label for="frm-contactForm-adresa" class="required">Adresa</label></th>
+            <td><input type="text" name="adresa" id="frm-contactForm-adresa" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu"}]' class="text"></td>
+         </tr>
+         <tr class="required">
             <th><label for="frm-contactForm-email" class="required">E-mail</label></th>
          
             <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"},{"op":":email","msg":"Please enter a valid email address."}]' class="text"></td>
          </tr>
          <tr class="required"> 
-            <th><label for="frm-contactForm-subject" class="required">Telefoní číslo</label></th>
-            <td><input type="tel" name="subject" id="frm-contactForm-subject" required data-nette-rules='[{"op":":filled","msg":"Zadejte číslo"}]' class="text"></td>
+            <th><label for="frm-contactForm-tel" class="required">Telefoní číslo</label></th>
+            <td><input type="tel" name="tel" id="frm-contactForm-tel" required data-nette-rules='[{"op":":filled","msg":"Zadejte číslo"}]' class="text"></td>
          </tr>
          <tr class="">
             <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
             <td id="buyItems">
-               <!-- <select id="frm-contactForm-subject">
-                  <option value="1">Bunda Under Armour Unstoppable Windbreaker</option>
-                  <option value="2">Mikina Under Armour Rival Fleece Crew</option>
-                  <option value="3">Hokejové Brusle CCM SK Ribcor 88K Senior W</option>
-               </select> -->
                <h6 id="sum-prices"></h6>
-              
             </td>
          </tr>
-        
          </table>
          </form>
          <div id="" class="shop-tabs">
