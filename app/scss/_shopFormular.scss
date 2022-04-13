@@ -1,0 +1,124 @@
+select{
+   line-height: 1.1;
+   font-family: inherit;
+   color: #2c2c2c;
+   font-size: 1rem;
+   border-radius: 2px;
+   border: 1px solid #e4e6ea;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   background-color: #fff;
+   border-radius: 6px 0px 0px 6px;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+   display: block;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-align: left;
+   padding: 7px 16px 3px 16px;
+   max-width: 100%;
+   width: 100%;
+   min-width: 300px;
+   box-sizing: border-box;
+   margin: 0 4px;
+   height: 56px;
+   outline: none;
+   background-image: url('../images/svg/angls.svg');
+   background-repeat: no-repeat;
+   background-position: right 1.2rem center;
+   background-size: 8px 12px;
+   -webkit-transition: 0.3s all linear;
+   -o-transition: 0.3s all linear;
+   transition: 0.3s all linear;
+}
+.shop-formular{
+   
+}
+.shop-tabs{
+   margin-top: 40px;
+   &__header{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+      .btn{
+         margin: 0 4px 8px;
+         border: 1px solid #2158d5;
+         background-color: #fff;
+         color: #2158d5;
+         transition: all .3s;
+         &.mixitup-control-active{
+            background-color: #2158d5;
+            color: #fff;
+         }
+         &:hover{
+            background-color: #2158d5;
+            color: #fff;
+         }
+      }
+   }
+
+}
+.product{
+   padding: 16px;
+   margin-bottom: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #e4e6ea;
+   &:last-child{
+      margin-bottom: 0;
+   }
+   h3{
+      font-size: 20px;
+      margin-bottom: 8px;
+   }
+   &__link{
+      display: flex;
+      align-items: center;
+   }
+   &__img{
+      width: 120px;
+      height: 100px;
+      padding-right: 16px;
+      min-width: 120px;
+      img{
+         object-fit: contain;
+      }
+   }
+   &__info{
+      padding: 0 16px;
+   }
+   &__btn{
+      cursor: pointer;
+      outline: none;
+      border: 1px solid #2158d5;
+      color: #2158d5;
+      font-size: 24px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      background: transparent;
+      transition: all .3s;
+      &:hover{
+         background-color: #2158d5;
+         color: #fff;
+      }
+   }
+}
+
+@media(max-width:600px){
+   .product__link{
+      flex-direction: column;
+   }
+   .product{
+      flex-direction: column;
+   }
+   .product__img{
+      width: 100%;
+      height: auto;
+      padding-right: 0;
+   }
+}

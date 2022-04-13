@@ -1,4 +1,5 @@
 $(function () {
+ 
   $('.gallery .group').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -19,6 +20,7 @@ $(function () {
       slidesToShow: 1,
       slidesToScroll:1
     });
+    var mixer = mixitup('.products');
 })
 
 
