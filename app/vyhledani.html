@@ -211,9 +211,10 @@
    </div>
    <div class="main__content">
       <div class="typo">
-         <h2>Nejbližší kluby</h2>
-         <p>test speci&aacute;ln&iacute; str&aacute;nky.</p>
-         <div class="map-canvas"></div>
+         <h2>Najděte nejbližší hokejbalový klub</h2>
+        <div class="map-wrapper">
+         <div class="map" id="map-canvas"></div>
+        </div>
       </div>
 
 
@@ -225,37 +226,24 @@
         <div class="filter__row">
      
            <!-- .col -->
+           <label for="frm-school-searchForm-name">Vyberte adresu </label>
            <div class="filter__col">
-              <label for="frm-school-searchForm-name">Název</label>
+              
              <div class="search-form__input">
-               <input type="text" name="name" id="frm-school-searchForm-name" class="js-selectric responsive">
+               <input placeholder="Město / obec / Ulice / PSČ" type="text" name="name" id="frm-school-searchForm-name" class="js-selectric responsive">
              </div>
-     
+             <div class="filter__btn">
+               <input type="submit" name="filter" value="OK" class="btn btn-wide btn-small">
+            </div>
            </div>
      
            <!-- .col -->
-           <div class="filter__col">
-              <label for="frm-school-searchForm-address">Adresa</label>
-              <div class="search-form__input">
-               <input type="text" name="address" id="frm-school-searchForm-address" class="js-selectric responsive">
-              </div>
-              
-     
-           </div>
+         
      
            <!-- .col -->
-           <div class="filter__col">
-              <label for="frm-school-searchForm-club">Klub</label>
-              <div class="search-form__input">
-               <input type="text" name="club" id="frm-school-searchForm-club" class="js-selectric responsive">
-              </div>
-             
-     
-           </div>
+         
               
-           <div class="filter__btn">
-              <input type="submit" name="filter" value="OK" class="btn btn-wide btn-small">
-           </div>
+          
      
         </div>
         <!-- end .row -->
@@ -278,13 +266,15 @@
                   </thead>
                   <tbody>
                      <tr>
-                        <td class="strong color-blue">﻿ZŠ Polabiny 1 </td>
+                        <td class="strong color-blue"><a href="/club.html">	
+                           HC KOMETA BRNO</a> </td>
                         <td class="strong color-blue">Družstevní 305, Pardubice 530 09</td>
                         <td class="strong color-blue">Autosklo</td>
                         <td class="strong color-blue">Milan Quaiser, quaiser.m@seznam.cz, 734366068</td>
                      </tr>
                      <tr>
-                        <td class="strong color-blue">ZŠ Závodu Míru</td>
+                        <td class="strong color-blue"><a href="/club.html">	
+                           HC KOMETA BRNO</a> </td>
                         <td class="strong color-blue">Nábřeží Závodu míru 1951, Pardubice 530 02</td>
                         <td class="strong color-blue">Autosklo</td>
                         <td class="strong color-blue">Marta Škodová, marta.skodova@zszavodumiru.cz, 466798572</td>
@@ -1507,24 +1497,33 @@
 </div>
 
 
-   
 
 
 
 
+
+   <script>
+      function initMap(){
+         let options = {
+            zoom: 8,
+				markers: [],
+            center: {lat: 41.88, lng:71.33}
+         }
+         let map = new google.maps.Map(document.getElementById('map-canvas'),options);
+
+      }
+
+
+   </script>
+ 
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR_CFWx7YlYZQ4coCRs0MBD1CRQx-dirc"></script>
-   <script src="js/front.js"></script>
+   <script async
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGbUUFsaw0lUa7gQrIwN4jZHSC7DFQ2QM&callback=initMap">
+</script>
    <script src="js/main.js"></script>
-   <script type="text/javascript">
-      var markers = [{"lat":"49.185448","lng":"16.602053","name":"HC KOMETA BRNO","city":"Brno","street":"Křídlovická 34","zip":"60300","linkname":"www.hc-kometa.cz","detail":"\/club\/default\/70202","logo":"http:\/\/hokejovaregistrace.cz\/upload\/phh\/logos\/ca2ad99df903c66d351d2c0204957baf4f590776.png","link":"http:\/\/www.hc-kometa.cz"},{"lat":"49.212746","lng":"16.606361","name":"TECHNIKA HOCKEY BRNO","city":"Brno","street":"Střední 26","zip":"60200","linkname":"www.technikahokej.cz","detail":"\/club\/default\/70208","logo":"http:\/\/hokejovaregistrace.cz\/upload\/phh\/logos\/f241283b85fabb4067291f6dc7d43db64c63b5dc.png","link":"http:\/\/www.technikahokej.cz"},{"lat":"49.203529","lng":"16.592546","name":"HCM Warriors Brno","city":"Brno","street":"Úvoz 55","zip":"60200","linkname":"www.hcmwarriorbrno.cz","detail":"\/club\/default\/70221","link":"http:\/\/www.hcmwarriorbrno.cz"}];
-      
-      if (markers.length  > 0) {
-         google.maps.event.addDomListener(window, 'load', initialize);
-      }
-      </script>
-</body>
+ 
+</body> 
 
 </html>

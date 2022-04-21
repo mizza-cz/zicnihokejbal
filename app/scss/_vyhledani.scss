@@ -1,5 +1,5 @@
 .map {
-  margin-bottom: 32px;
+
   iframe {
     display: block;
     width: 100%;
@@ -10,6 +10,7 @@
   &__btn {
     margin: 0 auto;
     padding: 0 8px;
+    width: 100px;
   }
   .search-form__input {
     max-width: 100%;
@@ -20,10 +21,14 @@
     margin-left: -8px;
     margin-right: -8px;
   }
-
+  label {
+    display: block;
+    padding-left: 8px;
+    margin-bottom: 4px;
+  }
   &__col {
-    max-width: 33.333%;
-    flex: 0 0 33.333%;
+    width: 100%;
+    display: flex;
     padding: 0 8px;
     margin-bottom: 16px;
     input {
@@ -31,9 +36,7 @@
       max-width: 100%;
       margin-bottom: 0;
     }
-    label {
-      display: block;
-    }
+    
   }
 }
 .col-sm-2 {
@@ -78,3 +81,28 @@
     }
   }
 }
+
+#map-canvas{
+  overflow: initial !important;
+  height: 100%;
+  width: 100%;
+}
+.map-wrapper{
+  width: 100%;
+  overflow: hidden;
+  height: 480px;
+  position: relative;
+}
+ @media(max-width:740px){
+   .table-responsive{
+     overflow-x: auto;
+     table{
+       width: 740px;
+     }
+   }
+ }
+ @media(max-width:640px){
+  .filter .search-form__input{
+    width: 100%;
+  }
+ }

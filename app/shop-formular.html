@@ -177,12 +177,13 @@
             <th><label for="frm-contactForm-tel" class="required">Telefoní číslo</label></th>
             <td><input type="tel" name="tel" id="frm-contactForm-tel" required data-nette-rules='[{"op":":filled","msg":"Zadejte číslo"}]' class="text"></td>
          </tr>
-         <tr class="">
+         <tr class="required">
             <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
             <td id="buyItems">
                <h6 id="sum-prices"></h6>
             </td>
          </tr>
+        
          <tr>
             <th></th>
             <td><input type="submit" name="send" value="Odeslat" class="button"></td>

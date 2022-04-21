@@ -1,0 +1,83 @@
+.club-link{
+   letter-spacing: -0.5px;
+    padding-left: 30px;
+    padding-right: 24px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 16px;
+    &:hover{
+       text-decoration: underline;
+    }
+    &::before{
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 4px;
+       width: 14px;
+       height: 14px;
+       background-image: url('../images/svg/arrow.svg');
+       transform: rotate(-180deg);
+       background-repeat: no-repeat;
+       background-size: contain;
+    }
+}
+.club{
+   &__inner{
+      display: flex;
+      margin-top: 40px;
+   }
+   &__content{
+      padding: 16px 32px;
+      h3{
+         margin-bottom: 24px;
+      }
+   }
+   &__info{
+      li{
+         strong{
+            margin-right: 8px;
+         }
+         a{
+            text-decoration: underline;
+            font-weight: 500;
+            &:hover{
+               text-decoration: none;
+            }
+         }
+      }
+   }
+   &__logo{
+      width: 300px;
+      background: #f6f7f8;
+      padding: 16px;
+      height: fit-content;
+      img{
+         height: auto;
+         object-fit: contain;
+      }
+   }
+}
+@media(max-width:740px){
+   .club__logo{
+      width: 200px;
+   }
+}
+@media(max-width:600px){
+   .club__inner{
+      flex-wrap: wrap;
+   }
+   .club__content{
+      width: 100%;
+      li:before{
+         display: none;
+      }
+      li{
+         padding-left: 0 !important;
+      }
+   }
+   .club__logo{
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+   }
+}
