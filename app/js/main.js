@@ -46,7 +46,7 @@ const updateShoppingCartHTML = function () {  // 3
 	if (productsInCart.length > 0) {
 		let result = productsInCart.map(product => {
 			return `
-				<div class="buyItem">
+				<div class="buyItem" id="${product.id}">
 						<h5>${product.name}</h5>
             <div>
 						<h6>${product.price}Kč</h6>
@@ -109,7 +109,7 @@ parentElement.addEventListener('click', (e) => { // Last
 				if (isPlusButton) {
 					productsInCart[i].count += 1
 				}
-				else if (isMinusButton) {
+				else if (isMinusButton) { 
 					productsInCart[i].count -= 1
 				}
 				productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
@@ -126,27 +126,3 @@ parentElement.addEventListener('click', (e) => { // Last
 updateShoppingCartHTML();
 
  
-// const counter = function () {
-//   const btns = document.querySelectorAll('.counter__btn');
-
-
-//   btns.forEach(btn => {
-//     btn.addEventListener('click', function () {
-//       const direction = this.dataset.direction;
-//       const inp = this.parentElement.querySelector('.counter__value');
-//       const currentValue = +inp.value;
-//       let newValue;
-
-//       if (direction === 'plus') {
-//         newValue = currentValue + 1;
-//       } else {
-//         newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
-//       }
-
-//       inp.value = newValue;
-//     })
-//   })
-
-// }
-
-// counter();
