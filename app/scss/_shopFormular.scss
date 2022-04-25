@@ -181,8 +181,8 @@ select{
    font-size: 24px;
    font-weight: 500;
    margin-top: 16px;
-   justify-content: end;
-   align-items: end;
+   justify-content: flex-end;
+   align-items: flex-end;
    h3{
       margin-left: 16px;
       text-decoration: underline;
