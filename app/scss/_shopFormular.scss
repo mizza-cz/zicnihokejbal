@@ -89,7 +89,7 @@ select{
    }
    &__info{
       padding: 0 16px;
-      span{
+      .price{
          color: #ee3232;
          font-weight: 700;
          font-size: 20px;
@@ -150,10 +150,46 @@ select{
        padding: 0 16px;
     }
     h6{
-       display: none;
+      //  display: none;
     }
 }
+.frm-contactForm__radio{
+   display: flex !important;
+   align-items: center;
+   
+   label+label{
+      margin-left: 16px;
+   }
+   label{
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
 
+   }
+   input[type=radio]{
+      width: 30px !important;
+      height: 30px !important;
+      margin-right: 8px;
+   }
+}
+.product__right{
+   display: flex;
+}
+.sum-prices{
+   text-align: right;
+   display: flex;
+   font-size: 24px;
+   font-weight: 500;
+   margin-top: 16px;
+   justify-content: end;
+   align-items: end;
+   h3{
+      margin-left: 16px;
+      text-decoration: underline;
+      color: $red;
+
+   }
+}
 @media(max-width:600px){
    .product__link{
       flex-direction: column;

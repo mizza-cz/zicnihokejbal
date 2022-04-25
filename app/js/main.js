@@ -30,7 +30,7 @@ if(!productsInCart){
 }
 const parentElement = document.querySelector('#buyItems');
 const cartSumPrice = document.querySelector('#sum-prices');
-const products = document.querySelectorAll('.product');
+const products = document.querySelectorAll('.mix');
 
 
 const countTheSumPrice = function () { // 4
@@ -48,8 +48,9 @@ const updateShoppingCartHTML = function () {  // 3
 			return `
 				<div class="buyItem" id="${product.id}" data-count="${product.count}">
 						<h5>${product.name}</h5>
-            <div>
-						<h6>${product.price}Kč</h6>
+            <div class="product__right">
+				<h6>${product.price}Kč</h6>
+
 						<div class="product__count">
 							<button class="button-minus" data-id=${product.id}>-</button>
 							<span class="countOfProduct">${product.count}</span>
@@ -59,7 +60,7 @@ const updateShoppingCartHTML = function () {  // 3
 				</div>`
 		});
 		parentElement.innerHTML = result.join('');
-		cartSumPrice.innerHTML =  countTheSumPrice() + 'Kč' 
+		cartSumPrice.innerHTML =  countTheSumPrice() + 'Kč'; 
 
 	}
 	else {
@@ -84,7 +85,7 @@ products.forEach(item => {   // 1
 		if (e.target.classList.contains('addToCart')) {
 			const productID = e.target.dataset.productId;
 			const productName = item.querySelector('h3').innerHTML;
-			const productPrice = item.querySelector('span').innerHTML;
+			const productPrice = item.querySelector('.priceValue').innerHTML;
 			const productImage = item.querySelector('img').src;
 			let product = {
 				name: productName,

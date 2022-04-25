@@ -157,30 +157,88 @@
          <form action="" method="post" id="frm-contactForm">
          <table>
          <tr class="required">
-            <th><label for="frm-contactForm-name" class="required">Jméno</label></th>
-            <td><input type="text" name="name" id="frm-contactForm-name" required data-nette-rules='[{"op":":filled","msg":"Zadejte jméno"}]' class="text"></td>
+            <th><label for="frm-contactForm-applicant" class="required">Název žadatele</label></th>
+            <td><input type="text" name="applicant" id="frm-contactForm-applicant" required data-nette-rules='[{"op":":filled","msg":"Zadejte žadatele"}]' class="text"></td>
          </tr>
+
+
          <tr class="required">
-            <th><label for="frm-contactForm-surname" class="required">Příjmení</label></th>
-            <td><input type="text" name="surname" id="frm-contactForm-surname" required data-nette-rules='[{"op":":filled","msg":"Zadejte příjmení"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-adresa" class="required">Adresa</label></th>
+            <th><label for="frm-contactForm-adresa" class="required">Adresa sídla</label></th>
             <td><input type="text" name="adresa" id="frm-contactForm-adresa" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu"}]' class="text"></td>
+         </tr>
+
+
+         <tr class="required">
+            <th><label for="frm-contactForm-ico" class="required">IČO</label></th>
+            <td><input type="text" name="ico" id="frm-contactForm-ico" required data-nette-rules='[{"op":":filled","msg":"Zadejte IČO"}]' class="text"></td>
+         </tr>
+
+
+         <tr class="required">
+            <th><label for="frm-contactForm-account" class="required">Bankovní účet</label></th>
+            <td><input type="text" name="account" id="frm-contactForm-account" required data-nette-rules='[{"op":":filled","msg":"Zadejte účet"}]' class="text"></td>
+         </tr>
+
+
+         <tr class="required">
+            <th><label for="frm-contactForm-bank" class="required">Název banky</label></th>
+            <td><input type="text" name="bank" id="frm-contactForm-bank" required data-nette-rules='[{"op":":filled","msg":"Zadejte banku"}]' class="text"></td>
+         </tr>
+
+         <tr class="required">
+            <th><label for="frm-contactForm-adresabank" class="required">Adresa banky</label></th>
+            <td><input type="text" name="adresabank" id="frm-contactForm-adresabank" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu banky"}]' class="text"></td>
+         </tr>
+
+         <tr class="required">
+            <th><label for="frm-contactForm-adresabank" class="required">Vedeno účetnictví </label></th>
+            <td class="frm-contactForm__radio">
+               <label>
+                  <input type="radio" name="choice-radio">
+                  Ano
+                </label>
+                <label>
+                  <input type="radio" name="choice-radio">
+                  Ne
+                </label>
+            </td>
+         </tr>
+
+
+         <tr>
+            <td>
+               <h3>Statutární zástupce</h3>
+            </td>
+         </tr>
+
+         <tr class="required">
+            <th><label for="frm-contactForm-name" class="required">Jméno a příjmení</label></th>
+            <td><input type="text" name="name" id="frm-contactForm-name" required data-nette-rules='[{"op":":filled","msg":"Zadejte Jméno a příjmení"}]' class="text"></td>
+         </tr>
+         <tr class="required">
+            <th><label for="frm-contactForm-function" class="required">Funkce</label></th>
+            <td><input type="text" name="function" id="frm-contactForm-function" required data-nette-rules='[{"op":":filled","msg":"Zadejte funkce"}]' class="text"></td>
+         </tr>
+         <tr class="required">
+            <th><label for="frm-contactForm-tel" class="required">Telefon</label></th>
+            <td><input type="tel" name="tel" id="frm-contactForm-tel" required data-nette-rules='[{"op":":filled","msg":"Zadejte telefon"}]' class="text"></td>
          </tr>
          <tr class="required">
             <th><label for="frm-contactForm-email" class="required">E-mail</label></th>
-         
-            <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"},{"op":":email","msg":"Please enter a valid email address."}]' class="text"></td>
+            <td><input type="email" name="adresa" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"}]' class="text"></td>
          </tr>
-         <tr class="required"> 
-            <th><label for="frm-contactForm-tel" class="required">Telefoní číslo</label></th>
-            <td><input type="tel" name="tel" id="frm-contactForm-tel" required data-nette-rules='[{"op":":filled","msg":"Zadejte číslo"}]' class="text"></td>
-         </tr>
+
+
          <tr class="required">
             <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
             <td id="buyItems">
-               <h6 id="sum-prices"></h6>
+            
+            </td>
+            <td>
+               <div class="sum-prices">
+                  Cena celkem:
+                  <h3 id="sum-prices"></h3>
+               </div>
             </td>
          </tr>
         
@@ -208,7 +266,9 @@
                            <div class="product__info">
                               <h3>Bunda Under Armour Unstoppable Windbreaker</h3>
                               <p>Lorem ipsum dolor sit ame olor sit ameolor sit amet.</p>
-                              <span>600 Kč</span>
+                              <h6 class="price">
+                                 <span class="priceValue">599</span> Kč
+                             </h6>
                            </div>
                         </a>
                          <button class="counter__btn addToCart" data-product-id="1">+</button>
@@ -223,7 +283,9 @@
                            <div class="product__info">
                               <h3>Mikina Under Armour Rival Fleece Crew</h3>
                               <p>Lorem ipsum dolor sit ame olor sit ameolor sit amet dolor sit ame olor sit ameolor sit amet dolor sit ame olor sit ameolor sit amet.</p>
-                              <span>350 Kč</span>
+                              <h6 class="price">
+                                 <span class="priceValue">599</span> Kč
+                             </h6>
                            </div>
                         </a>
                         <button class="counter__btn addToCart" data-product-id="2">+</button>
@@ -238,7 +300,9 @@
                            <div class="product__info">
                               <h3>Bunda Under Armour Unstoppable Windbreaker</h3>
                               <p>Lorem ipsum dolor sit ame olor sit ameolor sit amet.</p>
-                              <span>600 Kč</span>
+                              <h6 class="price">
+                                 <span class="priceValue">599</span >Kč
+                             </h6>
                            </div>
                         </a>
                         <button class="counter__btn addToCart" data-product-id="3">+</button>
@@ -253,7 +317,9 @@
                            <div class="product__info">
                               <h3>Mikina Under Armour Rival Fleece Crew</h3>
                               <p>Lorem ipsum dolor sit ame olor sit ameolor sit amet dolor sit ame olor sit ameolor sit amet dolor sit ame olor sit ameolor sit amet.</p>
-                              <span>600 Kč</span>
+                              <h6 class="price">
+                                 <span class="priceValue">599</span> Kč
+                             </h6>
                            </div>
                         </a>
                         <button class="counter__btn addToCart" data-product-id="4">+</button>
@@ -268,7 +334,9 @@
                            <div class="product__info">
                               <h3>Bunda Under Armour </h3>
                               <p>Lorem ipsum dolor sit ame olor sit ameolor sit amet.</p>
-                              <span>600 Kč</span>
+                              <h6 class="price">
+                                 <span class="priceValue">599</span >Kč
+                             </h6>
                            </div>
                         </a>
                         <button class="counter__btn addToCart" data-product-id="5">+</button>
