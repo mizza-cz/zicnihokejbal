@@ -57,7 +57,6 @@ const updateShoppingCartHTML = function () {  // 3
 		cartSumPrice.innerHTML =  countTheSumPrice() + ' Kč'; 
 	}
 	else {
-		
 		parentElement.innerHTML = ' ';
 	}
 }
