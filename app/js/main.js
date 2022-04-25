@@ -1,5 +1,4 @@
 $(function () {
- 
   $('.gallery .group').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -22,8 +21,6 @@ $(function () {
     });
     var mixer = mixitup('.products');
 })
-
-
 let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
 if(!productsInCart){
 	productsInCart = [];
@@ -31,8 +28,6 @@ if(!productsInCart){
 const parentElement = document.querySelector('#buyItems');
 const cartSumPrice = document.querySelector('#sum-prices');
 const products = document.querySelectorAll('.mix');
-
-
 const countTheSumPrice = function () { // 4
 	let sum = 0;
 	productsInCart.forEach(item => {
@@ -40,7 +35,6 @@ const countTheSumPrice = function () { // 4
 	});
 	return sum;
 }
-
 const updateShoppingCartHTML = function () {  // 3
 	localStorage.setItem('shoppingCart', JSON.stringify(productsInCart));
 	if (productsInCart.length > 0) {

@@ -94,7 +94,6 @@
       }
     }
   }
-
   .table-responsive {
     padding: 0 0 0 6px;
     overflow: auto;
@@ -104,8 +103,6 @@
   }
   &__table {
     margin-bottom: 32px;
-    table {
-    }
     h6 {
       color: $red;
       text-transform: uppercase;
