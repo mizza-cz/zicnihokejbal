@@ -49,7 +49,7 @@ const updateShoppingCartHTML = function () {  // 3
 				<div class="buyItem" id="${product.id}" data-count="${product.count}">
 						<h5>${product.name}</h5>
             <div class="product__right">
-				<h6>${product.price}Kč</h6>
+				<h6>${product.price} Kč</h6>
 
 						<div class="product__count">
 							<button class="button-minus" data-id=${product.id}>-</button>
@@ -60,7 +60,7 @@ const updateShoppingCartHTML = function () {  // 3
 				</div>`
 		});
 		parentElement.innerHTML = result.join('');
-		cartSumPrice.innerHTML =  countTheSumPrice() + 'Kč'; 
+		cartSumPrice.innerHTML =  countTheSumPrice() + ' Kč'; 
 
 	}
 	else {
