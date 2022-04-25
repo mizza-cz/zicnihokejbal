@@ -58,7 +58,6 @@ select{
          }
       }
    }
-
 }
 .product{
    padding: 16px;
@@ -107,7 +106,6 @@ select{
        text-align: center;
     }
    }
-
 }
 .counter__btn{
       display: flex;
@@ -134,7 +132,6 @@ select{
    padding: 0 16px;
 }
 .buyItem{
-   
    border-radius: 6px 0px 0px 6px;
     border: solid 1px #e4e6ea;
     height: 56px;
@@ -149,9 +146,6 @@ select{
     h5{
        padding: 0 16px;
     }
-    h6{
-      //  display: none;
-    }
 }
 .frm-contactForm__radio{
    display: flex !important;
@@ -164,7 +158,6 @@ select{
       display: flex;
       align-items: center;
       margin-bottom: 16px;
-
    }
    input[type=radio]{
       width: 30px !important;
@@ -187,7 +180,6 @@ select{
       margin-left: 16px;
       text-decoration: underline;
       color: $red;
-
    }
 }
 @media(max-width:600px){
