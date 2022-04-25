@@ -110,7 +110,6 @@ parentElement.addEventListener('click', (e) => { // Last
 					productsInCart[i].count -= 1
 				}
 				productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
-
 			}
 			if (productsInCart[i].count <= 0) {
 				productsInCart.splice(i, 1);
