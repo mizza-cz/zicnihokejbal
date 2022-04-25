@@ -61,14 +61,12 @@ const updateShoppingCartHTML = function () {  // 3
 		});
 		parentElement.innerHTML = result.join('');
 		cartSumPrice.innerHTML =  countTheSumPrice() + ' Kč'; 
-
 	}
 	else {
 		
 		parentElement.innerHTML = ' ';
 	}
 }
-
 function updateProductsInCart(product) { // 2
 	for (let i = 0; i < productsInCart.length; i++) {
 		if (productsInCart[i].id == product.id) {
@@ -79,7 +77,6 @@ function updateProductsInCart(product) { // 2
 	}
 	productsInCart.push(product);
 }
-
 products.forEach(item => {   // 1
 	item.addEventListener('click', (e) => {
 		if (e.target.classList.contains('addToCart')) {
@@ -100,7 +97,6 @@ products.forEach(item => {   // 1
 		}
 	});
 });
-
 parentElement.addEventListener('click', (e) => { // Last
 	const isPlusButton = e.target.classList.contains('button-plus');
 	const isMinusButton = e.target.classList.contains('button-minus');
@@ -123,7 +119,6 @@ parentElement.addEventListener('click', (e) => { // Last
 		updateShoppingCartHTML();
 	}
 });
-
 updateShoppingCartHTML();
 
  
