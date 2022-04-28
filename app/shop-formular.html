@@ -160,7 +160,7 @@
          <div class="typo">
             <h2>Dodací adresa</h2>
          </div>
-         <form action="https://mizza-cz.github.io/zicnihokejbal/app/shop-formular" method="post" id="frm-contactForm">
+         <form method="post" id="frm-contactForm">
          <table>
          <tr class="required">
             <th><label for="frm-contactForm-applicant" class="required">Název žadatele</label></th>
@@ -218,7 +218,7 @@
          </tr>
          <tr class="required">
             <th><label for="frm-contactForm-email" class="required">E-mail</label></th>
-            <td><input type="email" name="adresa" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"}]' class="text"></td>
+            <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"}]' class="text"></td>
          </tr>
          <tr class="required">
             <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
@@ -236,7 +236,7 @@
          </tr>
          <tr>
             <th></th>
-            <td><input type="submit" name="send" value="Odeslat" class="button"></td>
+            <td><input type="submit" name="send" id="send-form" value="Odeslat" class="button"></td>
          </tr>
          </table>
          </form>
@@ -390,6 +390,8 @@
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>
+   <script src="js/serialize.js"></script>
+   <script src="js/form.js"></script>
    <script src="js/main.js"></script>
 </body>
 

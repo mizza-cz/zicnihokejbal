@@ -63,12 +63,17 @@ select{
    align-items: center;
    justify-content: space-between;
    border-bottom: 1px solid #e4e6ea;
+   a{
+      text-decoration: none !important;
+   }
    &:last-child{
       margin-bottom: 0;
    }
    h3{
       font-size: 20px;
       margin-bottom: 8px;
+     
+      
    }
    &__link{
       display: flex;
@@ -85,6 +90,8 @@ select{
    }
    &__info{
       padding: 0 16px;
+      text-decoration: none;
+
       .price{
          color: #ee3232;
          font-weight: 700;

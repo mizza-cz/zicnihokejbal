@@ -40,7 +40,7 @@ const updateShoppingCartHTML = function () {  // 3
 	if (productsInCart.length > 0) {
 		let result = productsInCart.map(product => {
 			return `
-				<div class="buyItem" id="${product.id}" data-count="${product.count}">
+				<div class="buyItem" id="${product.id}" name="${product.count}">
 						<h5>${product.name}</h5>
             <div class="product__right">
 				<h6>${product.price} Kč</h6>
