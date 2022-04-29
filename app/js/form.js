@@ -1,9 +1,22 @@
-let radio = document.querySelector('input[name="choice-radio"]');
-let sendForm = document.querySelector('#send-form');
-let form = document.querySelector('#frm-contactForm');
-sendForm.onClick = function(event){
-   event.preventDefault();
-   console.log(serialize(form));
-   console.log('ololo');
-}
+
  
+
+$(document).ready(function(){
+   $('form').submit(function(event){
+      event.preventDefault();
+      $.ajax({
+         type: $(this).attr('method'),
+         url: $(this).attr('action'),
+         data: new FormData(this),
+         contentType: false,
+         processData: false,
+
+
+         success: function(result){
+            console.log(result)
+         }
+      })
+   })
+})
+
+

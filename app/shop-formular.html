@@ -160,85 +160,85 @@
          <div class="typo">
             <h2>Dodací adresa</h2>
          </div>
-         <form method="post" id="frm-contactForm">
-         <table>
-         <tr class="required">
-            <th><label for="frm-contactForm-applicant" class="required">Název žadatele</label></th>
-            <td><input type="text" name="applicant" id="frm-contactForm-applicant" required data-nette-rules='[{"op":":filled","msg":"Zadejte žadatele"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-adresa" class="required">Adresa sídla</label></th>
-            <td><input type="text" name="adresa" id="frm-contactForm-adresa" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-ico" class="required">IČO</label></th>
-            <td><input type="text" name="ico" id="frm-contactForm-ico" required data-nette-rules='[{"op":":filled","msg":"Zadejte IČO"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-account" class="required">Bankovní účet</label></th>
-            <td><input type="text" name="account" id="frm-contactForm-account" required data-nette-rules='[{"op":":filled","msg":"Zadejte účet"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-bank" class="required">Název banky</label></th>
-            <td><input type="text" name="bank" id="frm-contactForm-bank" required data-nette-rules='[{"op":":filled","msg":"Zadejte banku"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-adresabank" class="required">Adresa banky</label></th>
-            <td><input type="text" name="adresabank" id="frm-contactForm-adresabank" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu banky"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-adresabank" class="required">Vedeno účetnictví </label></th>
-            <td class="frm-contactForm__radio">
-               <label>
-                  <input type="radio" name="choice-radio">
-                  Ano
-                </label>
-                <label>
-                  <input type="radio" name="choice-radio">
-                  Ne
-                </label>
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <h3>Statutární zástupce</h3>
-            </td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-name" class="required">Jméno a příjmení</label></th>
-            <td><input type="text" name="name" id="frm-contactForm-name" required data-nette-rules='[{"op":":filled","msg":"Zadejte Jméno a příjmení"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-function" class="required">Funkce</label></th>
-            <td><input type="text" name="function" id="frm-contactForm-function" required data-nette-rules='[{"op":":filled","msg":"Zadejte funkce"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-tel" class="required">Telefon</label></th>
-            <td><input type="tel" name="tel" id="frm-contactForm-tel" required data-nette-rules='[{"op":":filled","msg":"Zadejte telefon"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-email" class="required">E-mail</label></th>
-            <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"}]' class="text"></td>
-         </tr>
-         <tr class="required">
-            <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
-            <td id="buyItems">
-            
-            </td>
-            <td>
-               <div class="shopping-cart">
-                  <div class="sum-prices">
-                     Cena celkem:
-                     <h3 id="sum-prices"></h3>
+         <form method="post" action="./test.php" id="frm-contactForm">
+            <table>
+            <tr class="required">
+               <th><label for="frm-contactForm-applicant" class="required">Název žadatele</label></th>
+               <td><input type="text" name="applicant" id="frm-contactForm-applicant" required data-nette-rules='[{"op":":filled","msg":"Zadejte žadatele"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-adresa" class="required">Adresa sídla</label></th>
+               <td><input type="text" name="adresa" id="frm-contactForm-adresa" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-ico" class="required">IČO</label></th>
+               <td><input type="text" name="ico" id="frm-contactForm-ico" required data-nette-rules='[{"op":":filled","msg":"Zadejte IČO"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-account" class="required">Bankovní účet</label></th>
+               <td><input type="text" name="account" id="frm-contactForm-account" required data-nette-rules='[{"op":":filled","msg":"Zadejte účet"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-bank" class="required">Název banky</label></th>
+               <td><input type="text" name="bank" id="frm-contactForm-bank" required data-nette-rules='[{"op":":filled","msg":"Zadejte banku"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-adresabank" class="required">Adresa banky</label></th>
+               <td><input type="text" name="adresabank" id="frm-contactForm-adresabank" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu banky"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-adresabank" class="required">Vedeno účetnictví </label></th>
+               <td class="frm-contactForm__radio">
+                  <label>
+                     <input type="radio" name="choice-radio">
+                     Ano
+                  </label>
+                  <label>
+                     <input type="radio" name="choice-radio">
+                     Ne
+                  </label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <h3>Statutární zástupce</h3>
+               </td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-name" class="required">Jméno a příjmení</label></th>
+               <td><input type="text" name="name" id="frm-contactForm-name" required data-nette-rules='[{"op":":filled","msg":"Zadejte Jméno a příjmení"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-function" class="required">Funkce</label></th>
+               <td><input type="text" name="function" id="frm-contactForm-function" required data-nette-rules='[{"op":":filled","msg":"Zadejte funkce"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-tel" class="required">Telefon</label></th>
+               <td><input type="tel" name="tel" id="frm-contactForm-tel" required data-nette-rules='[{"op":":filled","msg":"Zadejte telefon"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-email" class="required">E-mail</label></th>
+               <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
+               <td id="buyItems">
+               
+               </td>
+               <td>
+                  <div class="shopping-cart">
+                     <div class="sum-prices">
+                        Cena celkem:
+                        <h3 id="sum-prices"></h3>
+                     </div>
                   </div>
-               </div>
-            </td>
-         </tr>
-         <tr>
-            <th></th>
-            <td><input type="submit" name="send" id="send-form" value="Odeslat" class="button"></td>
-         </tr>
-         </table>
+               </td>
+            </tr>
+            <tr>
+               <th></th>
+               <td><input type="submit" name="send" id="send-form" value="Odeslat" class="button"></td>
+            </tr>
+            </table>
          </form>
          <div id="" class="shop-tabs">
             <div class="shop-tabs__header">

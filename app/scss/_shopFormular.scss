@@ -147,6 +147,10 @@ select{
     align-items: center;
     margin-bottom: 8px;
     justify-content: space-between;
+    input[type="text"]{
+       display: none;
+
+    }
     h5{
        padding: 0 16px;
     }
@@ -171,6 +175,7 @@ select{
 }
 .product__right{
    display: flex;
+   align-items: center;
 }
 .sum-prices{
    text-align: right;
@@ -185,6 +190,18 @@ select{
       text-decoration: underline;
       color: $red;
    }
+}
+
+.countOfProduct{
+   padding: 0 !important;
+   margin: 0 !important;
+   border-radius: 0 !important;
+   width: auto !important;
+   text-align: center !important;
+   max-width: 30px !important;
+   border: none !important;
+   display: inline-block;
+
 }
 @media(max-width:600px){
    .product__link{
