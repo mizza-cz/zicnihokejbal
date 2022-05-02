@@ -42,12 +42,11 @@ const updateShoppingCartHTML = function () {  // 3
 			return `
 				<div class="buyItem">
 					<h5>${product.name}</h5>
-					<input type="text" name="id:${product.id}" value="count:${product.count}">
             	<div class="product__right">
 						<h6>${product.price} Kč</h6>
 						<div class="product__count">
 							<button class="button-minus" data-id=${product.id}>-</button>
-							<input class="countOfProduct"  value="${product.count}">
+							<input class="countOfProduct" name="id:${product.id} - ${product.name}" value="${product.count}">
 							<button class="button-plus" data-id=${product.id}>+</button>
 						</div>
 					</div>

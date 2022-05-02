@@ -160,7 +160,7 @@
          <div class="typo">
             <h2>Dodací adresa</h2>
          </div>
-         <form method="post" action="./test.php" id="frm-contactForm">
+         <form method="post" action=""  id="frm-contactForm">
             <table>
             <tr class="required">
                <th><label for="frm-contactForm-applicant" class="required">Název žadatele</label></th>
@@ -221,6 +221,10 @@
                <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"}]' class="text"></td>
             </tr>
             <tr class="required">
+               <th><label for="frm-contactForm-text" class="required">Poznámka k objednávce</label></th>
+               <td><textarea name="text" id="frm-contactForm-text" required data-nette-rules='[{"op":":filled","msg":"Zadejte Poznámku"}]'></textarea></td>
+            </tr>
+            <tr class="required">
                <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
                <td id="buyItems">
                
@@ -240,6 +244,7 @@
             </tr>
             </table>
          </form>
+         
          <div id="" class="shop-tabs">
             <div class="shop-tabs__header">
                <button class="btn filter" data-filter="all">Vše</button>
