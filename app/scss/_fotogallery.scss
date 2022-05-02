@@ -1,6 +1,14 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  h5{
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+  }
+  h2{
+    
+  }
   &__link {
     width: 100%;
   }
@@ -29,7 +37,7 @@
 }
 .gallery {
   .group {
-    margin-top: 32px;
+    
     display: flex;
     flex-wrap: wrap;
     li {
@@ -59,3 +67,13 @@
   }
 }
 
+.mfp-bottom-bar{
+  margin-top: -40px;
+  height: 26px;
+  padding: 4px 8px;
+  background-color: $red;
+}
+.mfp-counter{
+  top: 4px;
+  right: 4px;
+}
