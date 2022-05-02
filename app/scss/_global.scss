@@ -95,6 +95,12 @@ blockquote {
     line-height: 1.33;
     max-width: 570px;
     margin-bottom: 0;
+    a{
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
   }
   p + p {
     margin-top: 24px;
