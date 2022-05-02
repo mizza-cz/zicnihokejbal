@@ -46,7 +46,7 @@ const updateShoppingCartHTML = function () {  // 3
 						<h6>${product.price} Kč</h6>
 						<div class="product__count">
 							<button class="button-minus" data-id=${product.id}>-</button>
-							<input class="countOfProduct" name="id:${product.id} - ${product.name}" value="${product.count}">
+							<input class="countOfProduct" name="id:${product.id}" value="${product.count}">
 							<button class="button-plus" data-id=${product.id}>+</button>
 						</div>
 					</div>
