@@ -21,6 +21,10 @@
   }
   &__img {
     margin-bottom: 16px;
+    height: 170px;
+    img{
+      object-fit: cover;
+    }
   }
 }
 .gallery {
