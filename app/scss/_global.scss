@@ -96,9 +96,9 @@ blockquote {
     max-width: 570px;
     margin-bottom: 0;
     a{
-      text-decoration: underline;
+      text-decoration: none;
       &:hover{
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
   }
