@@ -263,7 +263,7 @@
                   </thead>
                   <tbody>
                      <tr>
-                        <td class="strong color-blue"><a href="/club.html">	
+                        <td class="strong color-blue"><a href="/app/club.html">	
                            HC KOMETA BRNO</a> </td>
                         <td class="strong color-blue">Družstevní 305, Pardubice 530 09</td>
                         <td class="strong color-blue">Autosklo</td>
@@ -1490,20 +1490,43 @@
    </aside>
 </div>
    <script>
-      function initMap(){
-         let options = {
-            zoom: 8,
-				markers: [],
-            center: {lat: 41.88, lng:71.33}
-         }
-         let map = new google.maps.Map(document.getElementById('map-canvas'),options);
-      }
+         var mapVars = {
+            center: {
+               lat: 50.054528570735,
+               lon: 14.544433056556
+            },
+            zoom: 6,
+            centerMap: false,
+            markers: [
+               {  
+                  type: 'school',
+                  lat: 50.054528570735,
+                  lon: 14.544433056556,
+                  name: "HBC Hostivař",
+                  link: '',
+               },
+               {  
+                  type: 'preschool',
+                  lat: 51.054528570735,
+                  lon: 14.54,
+                  name: "HBC Hostivař",
+                  link: '',
+               },
+               {  
+                  lat: 50.0545,
+                  lon: 15.544433056556,
+                  name: "HBC Hostivař",
+                  link: '',
+               },
+            ]
+         };
    </script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>
-   <script async
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGbUUFsaw0lUa7gQrIwN4jZHSC7DFQ2QM&callback=initMap">
-</script>
+
+   <script src="js/front.js"></script>
+   <script defer src="https://maps.google.com/maps/api/js?key=AIzaSyAUVOfDiDCJ04CAVG4-TyWat2mqous6xto"></script>
+   <script type="text/javascript" src="js/map.js"></script>
    <script src="js/main.js"></script>
 </body> 
 </html>
