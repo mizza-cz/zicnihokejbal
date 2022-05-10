@@ -33,7 +33,14 @@
       }
    }
    &__info{
+      flex-direction: column;
+      display: flex;
       li{
+         display: block !important;
+         align-items: start;
+         p{
+            display: inline;
+         }
          strong{
             margin-right: 8px;
          }
@@ -47,10 +54,12 @@
       }
    }
    &__logo{
-      width: 300px;
+      max-width: 300px;
+      width: 100%;
       background: #f6f7f8;
       padding: 16px;
       height: fit-content;
+      display: flex;
       img{
          height: auto;
          object-fit: contain;
