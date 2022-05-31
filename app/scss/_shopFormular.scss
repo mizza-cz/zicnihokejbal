@@ -45,6 +45,10 @@ select{
          background-color: #fff;
          color: #2158d5;
          transition: all .3s;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-decoration: none;
          &.mixitup-control-active{
             background-color: #2158d5;
             color: #fff;
@@ -184,7 +188,8 @@ select{
    font-weight: 500;
    margin-top: 16px;
    justify-content: flex-end;
-   align-items: flex-end;
+   align-items:  flex-start;
+   margin-bottom: 24px;
    h3{
       margin-left: 16px;
       text-decoration: underline;
@@ -203,6 +208,9 @@ select{
    height: auto !important;
    display: inline-block;
 
+}
+.shopping-cart{
+   margin-bottom: 40px;
 }
 @media(max-width:600px){
    .product__link{

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+   <title>Document</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/libs.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <div class="main">
+      <div class="navigation">
+         <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="">
+         </a>
+         <div class="navbar__btns">
+            <div class="navbar__btn"></div>
+          </div>
+        <div class="mobile-wrapper">
+         <div class="navbar">
+            <ul class="navbar__menu">
+               <li class="navbar__list">
+                  <div class="navbar__item ">
+                   <div class="navbar__link icon" href="#">
+                     <i class="icon--zacni"></i>
+                     Začni s hokejbalem
+                   </div>
+                   <ul class="navbar__dropdown">
+                     <li>
+                        <a href="#">Co je to hokejbal
+                           Historie</a>
+                     </li>
+                     <li>
+                        <a href="#">Hokejbalové vybavení</a>
+                     </li>
+                     <li>
+                        <a href="#">Kde se hokejbal hraje?</a>
+                     </li>
+                  </ul>
+                  </div>
+               </li>
+               <li class="navbar__list">
+                 <div class="navbar__item">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-pro-rodice"></i>
+                     Pro rodiče
+                  </a>
+                 </div>
+               </li>
+               <li class="navbar__list">
+                 <div class="navbar__item">
+                  <div class="navbar__link icon " href="#">
+                     <i class="icon-pro-trenery"></i>
+                     Pro trenéry a učitele
+                  </div>
+                  <ul class="navbar__dropdown">
+                     <li>
+                        <a href="#">Objednávka vybavení</a>
+                     </li>
+                     <li>
+                        <a href="#">Zapojené školní organizace</a>
+                     </li>
+                     <li>
+                        <a href="#">dadsadsa</a>
+                     </li>
+                     <li>
+                        <a href="#">Metodické materiály</a>
+                     </li>
+                     <li>
+                        <a href="#">Popadni hokejku a pojď hrát hokejbal</a>
+                     </li>
+                  </ul>
+                 </div>
+                  
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-podpora"></i>
+                     Podpora a rozvoj
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-najdi"></i>
+                     Najdi klub
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-ke-stazeni"></i>
+                     Ke stažení
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-foto"></i>
+                     Fotogalerie
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-partneri"></i>
+                     Partneři
+                  </a>
+               </li>
+               <li class="navbar__list">
+                  <a class="navbar__link icon" href="#">
+                     <i class="icon-kontakt"></i>
+                     Kontakt
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="navigation__bottom">
+            <div class="nav-slide">
+               <a class="navigation__bottom-logo" href="#">
+                  <img src="images/svg/logo-svaz.svg" alt="">
+               </a>
+               <a class="navigation__bottom-logo" href="#">
+                  <img src="images/content/agentura.png" alt="">
+               </a>
+            </div>
+             
+
+               <ul class="social">
+                  <li>
+                     <a href="">
+                        <img src="images/svg/fb.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <img src="images/svg/insta.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <img src="images/svg/youtube.svg" alt="">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.hokejbal.cz/">
+                        <img src="images/svg/logo-svaz.svg" alt="">
+                     </a>
+                  </li>
+               </ul>
+         </div>
+        </div>
+      </div>
+      <div class="main__content">
+         <div class="typo">
+            <h2>Dodací adresa</h2>
+         </div>
+         <form method="post" action=""  id="frm-contactForm">
+            <table>
+            <tr class="required">
+               <th><label for="frm-contactForm-applicant" class="required">Název žadatele</label></th>
+               <td><input type="text" name="applicant" id="frm-contactForm-applicant" required data-nette-rules='[{"op":":filled","msg":"Zadejte žadatele"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-adresa" class="required">Adresa sídla</label></th>
+               <td><input type="text" name="adresa" id="frm-contactForm-adresa" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-ico" class="required">IČO</label></th>
+               <td><input type="text" name="ico" id="frm-contactForm-ico" required data-nette-rules='[{"op":":filled","msg":"Zadejte IČO"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-account" class="required">Bankovní účet</label></th>
+               <td><input type="text" name="account" id="frm-contactForm-account" required data-nette-rules='[{"op":":filled","msg":"Zadejte účet"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-bank" class="required">Název banky</label></th>
+               <td><input type="text" name="bank" id="frm-contactForm-bank" required data-nette-rules='[{"op":":filled","msg":"Zadejte banku"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-adresabank" class="required">Adresa banky</label></th>
+               <td><input type="text" name="adresabank" id="frm-contactForm-adresabank" required data-nette-rules='[{"op":":filled","msg":"Zadejte adresu banky"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-adresabank" class="required">Vedeno účetnictví </label></th>
+               <td class="frm-contactForm__radio">
+                  <label>
+                     <input type="radio" name="choice-radio">
+                     Ano
+                  </label>
+                  <label>
+                     <input type="radio" name="choice-radio">
+                     Ne
+                  </label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <h3>Statutární zástupce</h3>
+               </td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-name" class="required">Jméno a příjmení</label></th>
+               <td><input type="text" name="name" id="frm-contactForm-name" required data-nette-rules='[{"op":":filled","msg":"Zadejte Jméno a příjmení"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-function" class="required">Funkce</label></th>
+               <td><input type="text" name="function" id="frm-contactForm-function" required data-nette-rules='[{"op":":filled","msg":"Zadejte funkce"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-tel" class="required">Telefon</label></th>
+               <td><input type="tel" name="tel" id="frm-contactForm-tel" required data-nette-rules='[{"op":":filled","msg":"Zadejte telefon"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-email" class="required">E-mail</label></th>
+               <td><input type="email" name="email" id="frm-contactForm-email" required data-nette-rules='[{"op":":filled","msg":"Zadejte e-mail"}]' class="text"></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-text" class="required">Poznámka k objednávce</label></th>
+               <td><textarea name="text" id="frm-contactForm-text" required data-nette-rules='[{"op":":filled","msg":"Zadejte Poznámku"}]'></textarea></td>
+            </tr>
+            <tr class="required">
+               <th><label for="frm-contactForm-subject" class="required">Přidat zboží</label></th>
+               <td id="buyItems">
+               </td>
+               <td>
+                  <div class="shopping-cart">
+                     <div class="sum-prices">
+                        Cena celkem:
+                        <h3 id="sum-prices"></h3>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <th></th>
+               <td><input type="submit" name="send" id="send-form" value="Odeslat" class="button"></td>
+            </tr>
+            </table>
+         </form>
+      </div>
+      <aside class="aside">
+         <div class="clanky">
+            <h2>Nejnovější
+               <span>články</span>   
+            </h2>
+            <div class="clanek">
+               <a href="#">
+                  <div class="clanek__img">
+                     <img src="images/content/top-1.jpg" alt="">
+                     <div class="date">
+                        7. 12. 2021
+                     </div>
+                  </div>
+                  <h3>
+                     Hvězda NHL David Pastrňák v dresu Karviné
+                  </h3>
+               </a>
+            </div>
+            <div class="clanek">
+               <a href="#">
+                  <div class="clanek__img">
+                     <img src="images/content/top-1.jpg" alt="">
+                     <div class="date">
+                        7. 12. 2021
+                     </div>
+                  </div>
+                  <h3>
+                     Hvězda NHL David Pastrňák v dresu Karviné
+                  </h3>
+               </a>
+            </div>
+            <div class="clanek">
+               <a href="#">
+                  <div class="clanek__img">
+                     <img src="images/content/top-1.jpg" alt="">
+                     <div class="date">
+                        7. 12. 2021
+                     </div>
+                  </div>
+                  <h3>
+                     Hvězda NHL David Pastrňák v dresu Karviné
+                  </h3>
+               </a>
+            </div>
+         </div>
+      </aside>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/form.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
