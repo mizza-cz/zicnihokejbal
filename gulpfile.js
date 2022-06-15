@@ -21,7 +21,7 @@ gulp.task('sass', function () {
 gulp.task('style', function () {
    return gulp.src([
       'node_modules/normalize.css/normalize.css',
-     
+      'node_modules/select2/dist/css/select2.min.css',
       'node_modules/slick-carousel/slick/slick.css',
       'node_modules/magnific-popup/dist/magnific-popup.css'
    ])
@@ -36,6 +36,7 @@ gulp.task('style', function () {
 gulp.task('script', function () {
    return gulp.src([
       'node_modules/mixitup/dist/mixitup.min.js',
+      'node_modules/select2/dist/js/select2.min.js',
       'node_modules/slick-carousel/slick/slick.js',
       'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
    ])

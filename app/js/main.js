@@ -1,4 +1,8 @@
 $(function () {
+	$('.js-select').select2({
+		width: '100%',
+		minimumResultsForSearch: -1
+	 });
   $('.gallery .group').magnificPopup({
     delegate: 'a',
     type: 'image',
