@@ -1,0 +1,29 @@
+.partners{
+   margin-top: 32px;
+}
+.partners__item{
+   margin-bottom: 40px;
+   width: 100%;
+   height: auto;
+   a{
+      padding: 0 20px;
+      display: block;
+      img{
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+}
+.partners__row{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+   .partners__item{
+      max-width: 50%;
+      flex: 0 0 50%;
+      margin-bottom: 20px;
+   }
+}

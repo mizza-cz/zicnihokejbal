@@ -9,6 +9,8 @@
 @import 'vyhledani';
 @import 'shopFormular';
 @import 'club';
+@import 'partners';
+@import 'archiv';
 
 .main {
   display: flex;
@@ -50,6 +52,12 @@
   background-color: #f6f7f8;
   width: 556px;
   padding: 82px 24px 16px 24px;
+  .btn{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
   .search {
     margin-bottom: 160px !important;
   }
