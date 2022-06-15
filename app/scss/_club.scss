@@ -47,6 +47,13 @@
          a{
             text-decoration: underline;
             font-weight: 500;
+            img{
+               margin-top: 20px;
+               width: 100%;
+               max-width: 100%;
+              height: auto;
+              object-fit: contain;
+            }
             &:hover{
                text-decoration: none;
             }

@@ -35,6 +35,30 @@
   background-repeat: no-repeat;
   background-image: url('../images/svg/books.svg');
 }
+.icon-card:before {
+  content: '';
+  top: -10px;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 21px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/svg/card.svg');
+}
+.icon-archiv:before {
+  content: '';
+  top: -10px;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 21px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/svg/archiv.svg');
+}
 .icon-foto:before {
   content: '';
   top: -10px;
