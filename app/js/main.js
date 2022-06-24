@@ -47,7 +47,18 @@ if(cartSumPrice){
 				return `
 					<div class="buyItem">
 						<h5>${product.name}</h5>
+						<label for="" class="select-product">
+							Velikost
+							<select name="" id="">
+								<option value="">S</option>
+								<option value="">M</option>
+								<option value="">L</option>
+								<option value="">XL</option>
+								<option value="">XXL</option>
+							</select>
+						</label>
 						<div class="product__right">
+						
 							<h6>${product.price} Kč</h6>
 							<div class="product__count">
 								<button class="button-minus" data-id=${product.id}>-</button>
