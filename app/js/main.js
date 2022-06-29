@@ -47,9 +47,7 @@ if(cartSumPrice){
 				return `
 					<div class="buyItem">
 						<h5>${product.name}</h5>
-					
 						<div class="product__right">
-						
 							<h6>${product.price} Kč</h6>
 							<div class="product__count">
 								<button class="button-minus" data-id=${product.id}>-</button>
@@ -57,10 +55,10 @@ if(cartSumPrice){
 								<button class="button-plus" data-id=${product.id}>+</button>
 							</div>
 							${product.size ? `
-							<select class="size" name="${product.id}">
-								<option name="size:${product.id}" value="Kids">Kids</option>
-								<option name="size:${product.id}" value="Youth">Youth</option>
-								<option name="size:${product.id}" value="Junior"">Junior</option>
+							<select class="size" name="size:${product.id}">
+								<option value="Kids">Kids</option>
+								<option value="Youth">Youth</option>
+								<option value="Junior"">Junior</option>
 							</select>` : ''}
 						</div>
 					</div>`
@@ -88,7 +86,6 @@ if(cartSumPrice){
 				const productSize = e.target.dataset.productSize;
 				const productID = e.target.dataset.productId;
 				const productName = item.querySelector('h3').innerHTML;
-				
 				const productPrice = item.querySelector('.priceValue').innerHTML;
 				const productImage = item.querySelector('img').src;
 				let product = {
@@ -148,3 +145,5 @@ function tablesWrap() {
 	}
 }
 tablesWrap();
+
+

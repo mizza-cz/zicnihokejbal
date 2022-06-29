@@ -194,7 +194,7 @@ select{
 .product__right{
    display: flex;
    width: 100%;
-   justify-content: end;
+   justify-content: flex-end;
    align-items: center;
    @media(max-width:1140px){
       flex-direction: column;
@@ -226,7 +226,6 @@ select{
    border: none !important;
    height: auto !important;
    display: inline-block;
-
 }
 .shopping-cart{
    margin-bottom: 40px;
