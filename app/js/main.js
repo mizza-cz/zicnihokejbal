@@ -58,9 +58,9 @@ if(cartSumPrice){
 							</div>
 							${product.size ? `
 							<select class="size" name="${product.id}">
-								<option name="${product.id}" value="${product.id}">Kids</option>
-								<option name="${product.id}" value="${product.id}">Youth</option>
-								<option name="${product.id}" value="${product.id}"">Junior</option>
+								<option name="size:${product.id}" value="Kids">Kids</option>
+								<option name="size:${product.id}" value="Youth">Youth</option>
+								<option name="size:${product.id}" value="Junior"">Junior</option>
 							</select>` : ''}
 						</div>
 					</div>`
