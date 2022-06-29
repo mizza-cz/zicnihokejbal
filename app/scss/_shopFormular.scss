@@ -138,6 +138,9 @@ select{
 }
 .product__count{
    padding: 0 16px;
+   @media(max-width:1140px){
+      margin-top: 8px;
+   }
 }
 .buyItem{
    border-radius: 6px 0px 0px 6px;
@@ -151,12 +154,23 @@ select{
     align-items: center;
     margin-bottom: 8px;
     justify-content: space-between;
+    @media(max-width:1140px){
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding: 10px 10px 16px;
+    }
     input[type="text"]{
        display: none;
 
     }
     h5{
        padding: 0 16px;
+       @media(max-width:1140px){
+         margin-bottom: 8px;
+       }
     }
 }
 .frm-contactForm__radio{
@@ -179,7 +193,12 @@ select{
 }
 .product__right{
    display: flex;
+   width: 100%;
+   justify-content: end;
    align-items: center;
+   @media(max-width:1140px){
+      flex-direction: column;
+    }
 }
 .sum-prices{
    text-align: right;
@@ -225,21 +244,18 @@ select{
       margin-bottom: 16px;
    }
 }
-.select-product{
-   max-width: 100px;
-   display: flex;
-   align-items: center;
-   select{
-      width: 50px;
-      max-width: 50px;
-      min-width: auto;
-      height: 24px;
-      border-radius: 0;
-      border-color: black;
-      background: rgba(gray, .1);
-      font-size: 12px;
-      text-align: center;
-      margin-left: 8px;
-      display: block;
+.size{
+   width: 100%;
+   max-width: 80px;
+   min-width: auto;
+   height: 30px;
+   border-radius: 0;
+   border-color: black;
+   background: rgba(gray, .1);
+   font-size: 12px;
+   text-align: center;
+   display: block;
+   @media(max-width:1140px){
+      margin-top: 16px;
    }
 }

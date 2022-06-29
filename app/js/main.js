@@ -47,16 +47,7 @@ if(cartSumPrice){
 				return `
 					<div class="buyItem">
 						<h5>${product.name}</h5>
-						<label for="" class="select-product">
-							Velikost
-							<select name="" id="">
-								<option value="">S</option>
-								<option value="">M</option>
-								<option value="">L</option>
-								<option value="">XL</option>
-								<option value="">XXL</option>
-							</select>
-						</label>
+					
 						<div class="product__right">
 						
 							<h6>${product.price} Kč</h6>
@@ -65,6 +56,12 @@ if(cartSumPrice){
 								<input class="countOfProduct" name="id:${product.id}" value="${product.count}">
 								<button class="button-plus" data-id=${product.id}>+</button>
 							</div>
+							${product.size ? `
+							<select class="size" name="${product.id}">
+								<option name="${product.id}" value="${product.id}">Kids</option>
+								<option name="${product.id}" value="${product.id}">Youth</option>
+								<option name="${product.id}" value="${product.id}"">Junior</option>
+							</select>` : ''}
 						</div>
 					</div>`
 			});
@@ -88,8 +85,10 @@ if(cartSumPrice){
 	products.forEach(item => {   // 1
 		item.addEventListener('click', (e) => {
 			if (e.target.classList.contains('addToCart')) {
+				const productSize = e.target.dataset.productSize;
 				const productID = e.target.dataset.productId;
 				const productName = item.querySelector('h3').innerHTML;
+				
 				const productPrice = item.querySelector('.priceValue').innerHTML;
 				const productImage = item.querySelector('img').src;
 				let product = {
@@ -97,6 +96,7 @@ if(cartSumPrice){
 					image: productImage,
 					id: productID,
 					count: 1,  
+					size: productSize,
 					price: +productPrice,
 					basePrice: +productPrice,
 				}
