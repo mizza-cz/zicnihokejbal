@@ -55,7 +55,7 @@ if(cartSumPrice){
 								<button class="button-plus" data-id=${product.id}>+</button>
 							</div>
 							${product.size ? `
-							<select class="size" name="size:${product.id}">
+							<select class="size js-select" name="size:${product.id}">
 								<option value="Kids">Kids</option>
 								<option value="Youth">Youth</option>
 								<option value="Junior"">Junior</option>

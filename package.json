@@ -22,7 +22,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "select2": "^4.1.0-rc.0",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "select2": "^4.1.0-rc.0"
   }
 }
