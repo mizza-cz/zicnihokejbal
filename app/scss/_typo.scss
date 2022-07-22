@@ -1,6 +1,6 @@
 .typo {
   padding: 77px 0 0px;
-  p{
+  p {
     margin: 16px 0;
   }
   h3 {
@@ -245,4 +245,8 @@
 .mfp-counter,
 .mfp-title {
   color: #000;
+}
+.typo li p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
