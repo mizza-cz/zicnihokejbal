@@ -1,16 +1,17 @@
 .typo {
-  padding: 77px 0 0px; 
- 
-  h3{
+  padding: 77px 0 0px;
+  p{
+    margin: 16px 0;
+  }
+  h3 {
     margin-bottom: 24px;
   }
-  a{
-    &:hover{
+  a {
+    &:hover {
       text-decoration: underline;
     }
   }
   ul {
-    margin-bottom: 40px;
     li + li {
       margin-top: 8px;
     }
@@ -21,7 +22,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      
+
       &:hover {
         a {
           text-decoration: underline;
@@ -238,11 +239,10 @@
   }
 }
 
-.mfp-bottom-bar{
+.mfp-bottom-bar {
   background-color: #fff;
-
 }
 .mfp-counter,
-.mfp-title{
+.mfp-title {
   color: #000;
 }

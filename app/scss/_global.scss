@@ -16,7 +16,9 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-p,li, li a{
+p,
+li,
+li a {
   font-size: 16px;
   line-height: 150%;
 }
@@ -26,7 +28,7 @@ li {
   padding: 0;
   list-style: none;
 }
-iframe{
+iframe {
   height: 100% !important;
   min-height: 200px;
 }
@@ -47,8 +49,12 @@ p {
   letter-spacing: 0;
   margin-bottom: 20px;
   img {
-    margin-bottom: 29px;
-    height: auto;
+    display: block !important;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: auto !important;
+    float: none !important;
+    object-fit: cover;
   }
 }
 body {
@@ -103,9 +109,9 @@ blockquote {
     line-height: 1.33;
     max-width: 570px;
     margin-bottom: 0;
-    a{
+    a {
       text-decoration: none;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -148,6 +154,7 @@ table {
     }
   }
 }
-li p{
+li p {
   margin-bottom: 0;
+  margin-top: 0;
 }
