@@ -29,8 +29,9 @@ li {
   list-style: none;
 }
 iframe {
-  height: 100% !important;
+  width: 100%;
   min-height: 200px;
+  margin: 20px auto;
 }
 h1,
 h2,
@@ -154,4 +155,3 @@ table {
     }
   }
 }
-
