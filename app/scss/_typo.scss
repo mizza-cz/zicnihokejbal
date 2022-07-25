@@ -250,3 +250,24 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+.typo__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  .grid-item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 10px;
+    height: 170px;
+    margin-bottom: 10px;
+    @media (max-width: 680px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media (max-width: 480px) {
+      height: 140px;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}
