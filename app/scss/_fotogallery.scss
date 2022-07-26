@@ -1,10 +1,10 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  li+li{
+  li + li {
     margin-top: 0 !important;
   }
-  h5{
+  h5 {
     display: block;
     width: 100%;
     margin: 16px 0;
@@ -31,7 +31,7 @@
   &__img {
     margin-bottom: 16px;
     height: 170px;
-    img{
+    img {
       object-fit: cover;
     }
   }
@@ -56,7 +56,7 @@
     padding: 0 8px;
     margin-bottom: 16px;
     padding-left: 0 !important;
-    &::before{
+    &::before {
       display: none;
     }
     @media (max-width: 740px) {
@@ -66,43 +66,66 @@
   }
 }
 
-.mfp-bottom-bar{
+.mfp-bottom-bar {
   margin-top: -40px;
   height: 26px;
   padding: 4px 8px;
 }
-.mfp-counter{
+.mfp-counter {
   top: 4px;
   right: 4px;
 }
-
-.grid-container {
-  columns: 3 240px;
-  gap: 10px;
-  position: relative;
-  a {
-    width: 100%;
-    padding: 5px;
-    text-decoration-color: transparent;
-    &:hover{
-       text-decoration-color: inherit;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  .grid-item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 10px;
+    height: 170px;
+    margin-bottom: 10px;
+    @media (max-width: 680px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media (max-width: 480px) {
+      height: 140px;
     }
     img {
-      width: 100%;
-      transition: all .25s ease-in-out;
-      min-height: 140px;
-    }
-    p {
-     font-weight: 600;
-     font-size: 18px;
-     line-height: 120%;
+      object-fit: cover;
     }
   }
 }
-.grid-item{
-   display: none;
-   transition: .3s;
-   &:nth-child(-n+12){
-     display: inline-block;
-   }
+.gallery .grid-container.group {
+  columns: 3 240px;
+  gap: 10px;
+  position: relative;
+  .grid-item {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 5px;
+    text-decoration-color: transparent;
+    height: auto;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+    img {
+      width: 100%;
+      transition: all 0.25s ease-in-out;
+      min-height: 140px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+    }
+  }
+}
+.grid-item {
+  display: none;
+  transition: 0.3s;
+  &:nth-child(-n + 12) {
+    display: inline-block;
+  }
 }
