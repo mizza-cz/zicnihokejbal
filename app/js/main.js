@@ -3,8 +3,8 @@ $(function () {
     width: '100%',
     minimumResultsForSearch: -1,
   });
-  $('.gallery .group, .typo__gallery').magnificPopup({
-    delegate: 'a',
+  $('.gallery .grid-item').magnificPopup({
+    // delegate: 'a',
     type: 'image',
     gallery: {
       enabled: true,
