@@ -180,7 +180,8 @@
   }
 }
 .perex {
-  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.33;
   font-weight: 700;
   margin-bottom: 37px;
@@ -252,4 +253,44 @@
 .typo li p {
   margin-top: 0;
   margin-bottom: 0;
+}
+.o-content {
+  h1 {
+    font-weight: 700;
+    color: #c0392b;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+  h2 {
+    font-weight: 700;
+    color: #c0392b;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-weight: 700;
+    color: #000;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+  p {
+    color: #000;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+  a {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: #c0392b;
+    font-size: 14px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
