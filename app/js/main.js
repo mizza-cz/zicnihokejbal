@@ -23,6 +23,13 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
   });
+  $('.typo__video-ban').slick({
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
   var mixer = mixitup('.products');
 });
 let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));

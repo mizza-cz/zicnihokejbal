@@ -2,6 +2,9 @@
   padding: 77px 0 0px;
   p {
     margin: 16px 0;
+    color: #000;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
   }
   h3 {
     margin-bottom: 24px;
@@ -9,6 +12,45 @@
   a {
     &:hover {
       text-decoration: underline;
+    }
+  }
+  ol {
+    color: #c0392b;
+    margin: 40px 0;
+    counter-reset: item;
+    font-size: 12px !important;
+    p,
+    a {
+      font-size: 12px !important;
+    }
+    li + li {
+      margin-top: 8px;
+    }
+
+    > li {
+      counter-increment: item;
+      font-size: 12px !important;
+      line-height: 1.57;
+      padding-left: 28px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: counter(item) ')';
+        color: var(--color-blue);
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      > ol {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            content: counter(item) '.';
+          }
+        }
+      }
     }
   }
   ul {
@@ -103,6 +145,12 @@
       padding: 0 14px;
       max-width: 37%;
       flex: 0 0 37%;
+      .slick-track {
+        display: flex !important;
+        align-items: center;
+      }
+      .slick-slide div {
+      }
       img {
         object-fit: cover;
       }
@@ -181,8 +229,7 @@
 }
 .perex {
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.33;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 37px;
 }
@@ -281,14 +328,14 @@
   }
   p {
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Arial, sans-serif;
   }
   a {
     font-family: Arial, sans-serif;
     font-weight: 700;
     color: #c0392b;
-    font-size: 14px;
+    font-size: 16px;
     &:hover {
       text-decoration: none;
     }
