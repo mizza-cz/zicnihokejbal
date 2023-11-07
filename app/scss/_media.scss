@@ -217,6 +217,12 @@
 }
 
 @media (max-width: 640px) {
+  .main-hp .typo__video {
+    margin-top: 40px;
+  }
+  .typo__video {
+    margin-bottom: 0;
+  }
   h3 {
     font-size: 1.3rem;
   }

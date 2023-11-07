@@ -151,6 +151,11 @@
       }
       .slick-slide div {
       }
+      a {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+      }
       img {
         object-fit: cover;
       }
